@@ -1,0 +1,66 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css"
+        href="./bower_components/jasmine-core/lib/jasmine-core/jasmine.css" />
+    <script type="text/javascript"
+        src="./bower_components/jasmine-core/lib/jasmine-core/jasmine.js" >
+        </script>
+    <script type="text/javascript"
+        src="./bower_components/jasmine-core/lib/jasmine-core/jasmine-html.js" />
+        </script>
+    <script type="text/javascript"
+        src="./bower_components/jasmine-core/lib/jasmine-core/boot.js" >
+        </script>
+
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+
+</head>
+<body>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <script>
+      var map = {
+        '@angular':                   'node_modules/@angular',
+        'rxjs':                       'node_modules/rxjs'
+      };
+
+    var packages = {
+      'app': { main: 'main.js',  defaultExtension: 'js' },
+      'rxjs': { defaultExtension: 'js' },
+      'angular2-in-memory-web-api': { defaultExtension: 'js' },
+      'test' : { defaultExtension: 'js'},
+    };
+
+    var packageNames = [
+      '@angular/common',
+      '@angular/compiler',
+      '@angular/core', 
+      '@angular/platform-browser',
+      '@angular/platform-browser-dynamic',
+    ];
+
+    packageNames.forEach(function(pkgName) {
+      packages[pkgName] = { main: 'index.js', defaultExtension: 'js' };
+    });
+
+    var config = {
+      map: map,
+      packages: packages
+    }
+
+    System.config(config);
+
+    // #3. Import the spec file explicitly
+    System.import('test/app.component.tests')
+
+      // #4. wait for all imports to load ...
+      //     then re-execute `window.onload` which
+      //     triggers the Jasmine test-runner start
+      //     or explain what went wrong.
+      .then(window.onload)
+      .catch(console.error.bind(console));
+  </script>
+</body>
+</html>
+

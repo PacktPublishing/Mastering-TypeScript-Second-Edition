@@ -1,0 +1,18 @@
+<template>
+
+    <require from="./login"></require>
+    <login if.bind="isLoginVisible"></login>
+
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container-fluid">
+        <a class="navbar-brand">Home</a>
+        <ul class="nav navbar-nav">
+            <li repeat.for="item of menuItems" 
+              class="nav-item nav-link active">
+
+            <a href="#">${item.ButtonName}</a></li>
+        </ul>
+    </div>
+</nav>
+
+</template>

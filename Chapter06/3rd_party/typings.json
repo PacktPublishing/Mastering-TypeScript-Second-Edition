@@ -1,0 +1,12 @@
+{
+  "name": "ts_backbone",
+  "dependencies": {},
+  "globalDependencies": {
+    "angular": "registry:dt/angular#1.5.0+20160517064839",
+    "backbone": "registry:dt/backbone#1.0.0+20160316155526",
+    "backbone-global": "registry:dt/backbone-global#1.0.0+20160509145756",
+    "extjs": "registry:dt/extjs#4.2.1+20160317120654",
+    "jquery": "registry:dt/jquery#1.10.0+20160417213236",
+    "underscore": "registry:dt/underscore#1.7.0+20160505190121"
+  }
+}

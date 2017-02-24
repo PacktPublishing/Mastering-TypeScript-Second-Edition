@@ -1,0 +1,45 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css"
+        href="../node_modules/jasmine-core/lib/jasmine-core/jasmine.css" />
+    <script type="text/javascript"
+        src="../node_modules/jasmine-core/lib/jasmine-core/jasmine.js" >
+        </script>
+          
+    <script type="text/javascript"
+        src="../node_modules/jasmine-core/lib/jasmine-core/jasmine-html.js" >
+        </script>
+    <script type="text/javascript"
+        src="../node_modules/jasmine-core/lib/jasmine-core/boot.js" >
+        </script>
+
+    <script src="/testem.js"></script>
+             
+    <script type="text/javascript"
+        src="../node_modules/jquery/dist/jquery.js" >
+        </script>   
+    <script type="text/javascript"
+        src="../node_modules/jasmine-jquery/lib/jasmine-jquery.js" >
+        </script>        
+    <script type="text/javascript"
+        src="../node_modules/jasmine-reporters/src/teamcity_reporter.js" >
+        </script>        
+
+  
+    <script type="text/javascript"
+        src="./UsingExtension.js" ></script>    
+
+
+    <script type="text/javascript"
+        src="./01_SimpleJasmineTests.js" ></script>
+
+      
+</head>
+<body>
+    
+    <script>
+        jasmine.getEnv().addReporter(new jasmineReporters.TeamCityReporter());
+    </script>
+    
+</body>
+</html>

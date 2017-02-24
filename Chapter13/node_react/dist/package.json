@@ -1,0 +1,15 @@
+{
+  "name": "node_react_dist",
+  "version": "1.0.0",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "express-session": "^1.14.1",
+    "hbs": "^4.0.1",
+    "promise-polyfill": "^6.0.2",
+    "react": "^15.4.0",
+    "react-dom": "^15.4.0",
+    "whatwg-fetch": "^2.0.1"
+  }
+}

@@ -1,0 +1,51 @@
+/* The Overlay (background) */
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 54px;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: .3s;  
+    transform: translateX(100%);
+    border-left: 1px solid;
+}
+
+
+#board_detail_inner_panel {
+    overflow-y: scroll;
+}
+
+.board_detail_inner_panel_row {
+    margin-right: 0px;
+}
+
+.board_detail_row {
+    margin: 10px;
+    padding-bottom: 15px;
+    border-bottom: solid 1px black;
+}
+
+.board_detail_header {
+    font-size: 2em;
+}
+
+.board_detail_sub_header {
+    font-size: 1.5em;
+}
+
+.board_detail_text {
+    padding-right: 40px;
+}
+
+.board_detail_size_header {
+    font-size: 1.5em;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px black;
+}
+
+.board_detail_image_height {
+    height: 400px;
+}

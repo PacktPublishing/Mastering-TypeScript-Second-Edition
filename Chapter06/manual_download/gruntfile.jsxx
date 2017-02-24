@@ -1,0 +1,16 @@
+module.exports = function (grunt) {
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-exec');
+    grunt.initConfig( {
+        pkg: grunt.file.readJSON('package.json'),
+        watch : {
+            files : ['**/*.ts'],
+            tasks : ['exec:run_tsc', 'exec:exec_ch06']
+        },
+        exec: {
+            run_tsc: { cmd : 'tsc'},
+            exec_ch06: {cmd: 'node hello_ch06.js'}
+        }
+    });
+    grunt.registerTask('default', ['watch']);
+};

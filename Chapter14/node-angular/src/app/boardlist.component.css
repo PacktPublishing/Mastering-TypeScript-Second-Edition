@@ -1,0 +1,50 @@
+
+.board_panel {
+    padding: 10px;
+}
+
+.board_inner_panel {
+    background-color: white;
+    padding: 15px;
+    border-left: solid 10px ;
+    border-left-color: #016876;
+    cursor: pointer;
+}
+
+.board_title_row {
+    padding-bottom: 10px;
+    border-bottom: solid 4px #016876;
+    margin-right: 5px;
+    /*background-color: dimgray;*/
+}
+
+.board_name {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+.no_padding_left {
+    padding-left: 0px;
+}
+
+.rrd_logo_class {
+    min-height: 50px;
+    max-height: 50px;
+    min-width: 75px;
+    max-width: 75px;
+}
+
+.jpa_logo_class {
+    min-height: 50px;
+    max-height: 50px;
+    min-width: 50px;
+    max-width: 50px;
+}
+.board_details_row {
+    margin-top: 5px;
+}
+
+.thumb_img_height {
+    height: 120px;
+}

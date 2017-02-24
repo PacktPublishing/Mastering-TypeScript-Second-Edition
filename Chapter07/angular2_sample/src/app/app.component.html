@@ -1,0 +1,13 @@
+<h1>
+  {{title}}
+</h1>
+
+<ul>
+    <li *ngFor="let item of items"
+      (click)="onSelect(item)">
+        <button>
+            {{item.displayName}}
+        </button>
+    </li>
+</ul>
+

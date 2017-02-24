@@ -1,0 +1,51 @@
+<div *ngFor="let manufacturer of currentList; let i_manuf = index ">
+
+    <div *ngFor="let board of manufacturer.boards; let i_board = index" >
+        <!--<a href="#" (click)="navClicked(item)">{{board.Name}}</a>-->
+
+        <div class="col-sm-4 board_panel" (click)="boardClicked(board)"
+            id="board_item_{{i_manuf}}_{{i_board}}"
+            >
+            <div class="board_inner_panel">
+                    <div class="row board_title_row">
+                        <div class="col-sm-10">
+                            <span class="center-block board_name">{{board.name}}</span>
+                            <span class="center-block xboard_title_row">
+                                {{board.description}}
+                            </span>
+                        </div>
+                        <div class="col-sm-2 no_padding_left board_small_image">
+                            <img src="/dist/assets/images/{{manufacturer.manufacturer_logo}}" 
+                                class="jpa_logo_class" />
+                        </div>
+                    </div>
+                    <div class="row board_details_row">
+                        <a >
+                            <div class="col-sm-7">
+                                <img src="/dist/assets/images/{{board.image}}" 
+                                    class="img-thumbnail thumb_img_height center-block" />
+                            </div>
+                        </a>
+                            <div class="col-sm-5 ">
+                                <div class="row">
+                                    <span>&nbsp;</span>
+                                </div>
+                                <div class="row">
+                                    Sizes:
+                                </div>
+                                <div class="row board_size_mini_view">
+                                <table>
+                                    <tr *ngFor="let size of board.sizes">
+                                        <td>{{size.volume}}</td>
+                                    </tr>
+                                </table>
+                                </div>
+                            </div>
+                    </div>
+            </div>
+        </div>
+
+
+    </div> 
+
+</div>

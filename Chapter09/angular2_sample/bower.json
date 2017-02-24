@@ -1,0 +1,20 @@
+{
+  "name": "angular2_sample",
+  "description": "",
+  "main": "",
+  "authors": [
+    "blorkfish <blorkfish@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jasmine-core": "jasmine#^2.4.1"
+  }
+}

@@ -1,0 +1,19 @@
+<template>
+  <require from="./ClickableItem"></require>
+  <h1>${message}</h1>
+    <ul>
+    <li repeat.for="item of items" 
+        click.delegate="onItemClicked(item)" >
+      <button id="select_button_${$index}" >
+        ${item.displayName}
+      </button>
+    </li>
+  </ul>
+
+  <clickable-item 
+    id-value="${currentElement.idValue}"
+    display-name="${currentElement.displayName}" >
+  </clickable-item>
+  
+</template>
+

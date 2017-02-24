@@ -1,0 +1,10 @@
+<template>
+  <h1>${message}</h1>
+    <ul>
+   <li repeat.for="item of items"
+      click.delegate="onItemClicked(item)">
+      <button >${item.displayName}</button>
+  </li>
+
+  </ul>
+</template>

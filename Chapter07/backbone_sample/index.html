@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <script type="text/javascript" src="./node_modules/jbone/dist/jbone.js"></script>
+        <script type="text/javascript" src="./node_modules/underscore/underscore.js"></script>
+        <script type="text/javascript" src="./node_modules/backbone/backbone.js"></script>
+        <script type="text/javascript" src="./app/BackboneApp.js"></script>
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css" type="text/css" />
+    </head>
+    <body>
+<script >
+    window.onload = function() {
+        var app = new ScreenViewApp();
+        app.start();
+    }
+</script>
+
+<div id="pageLayoutRegion">
+</div>
+
+<script type="text/template" id="itemCollectionViewTemplate">
+    <h1> <%= DisplayName %> </h1>
+    <ul id="ulRegions">
+    </ul>
+</script>
+        
+<script type="text/template" id="itemViewTemplate">
+    <button class="btn btn-primary"><%= DisplayName %></button>
+</script>
+
+    </body>
+</html>

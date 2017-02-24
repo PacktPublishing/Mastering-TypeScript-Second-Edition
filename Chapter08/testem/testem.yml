@@ -1,0 +1,9 @@
+{
+    "framework" : "jasmine2",
+    "src_files": [
+        "jquery.js",
+        "jasmine-jquery.js",
+        "UsingExtension.js",
+        "test1.js"
+    ]
+}

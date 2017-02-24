@@ -1,0 +1,12 @@
+<div id="mySidenav" class="sidenav">
+  <h1>Apply Filter :</h1>
+
+  <div *ngFor="let filter of filterList;">
+    <div class="filterHeader">{{filter.filterName}}</div>
+    <div *ngFor="let filterValue of filter.filterValues" >
+        <a href="#" 
+          (click)="filterClicked(filter, filterValue)">{{filterValue}}
+          </a>
+      </div>
+  </div>
+</div>

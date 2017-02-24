@@ -1,0 +1,20 @@
+{
+  "name": "react_sample",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "blorkfish <blorkfish@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jasmine-core": "jasmine#^2.4.1"
+  }
+}

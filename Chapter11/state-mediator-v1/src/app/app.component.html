@@ -1,0 +1,47 @@
+<nav class="navbar navbar-inverse bg-inverse navbar-toggleable-sm">
+  <a class="navbar-brand">&nbsp;</a>
+  <div class="nav navbar-nav">
+    <a class="nav-item nav-link active">Home</a>
+    <a class="nav-item nav-link">Products</a>
+    <a class="nav-item nav-link">About Us</a>
+  </div>
+</nav>
+
+<div id="mySidenav" class="sidenav">
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<div id="myRightScreen" class="overlay">
+    <button class="btn button-no-borders" 
+    (click)="closeClicked()">
+        <span class="fa fa-chevron-left"></span>
+    </button>
+    <div class="overlay-content">
+        <h1>page 2</h1>
+    </div>
+</div>
+
+
+<div id="main" class="main-content-panel">
+    <div class="row">
+        <div class="col-sm-1">
+
+        <button class="btn button-no-borders" 
+            (click)="showHideSideClicked()" >
+            <span id="show-hide-side-button" class="fa "><</span>
+        </button>
+                                
+        </div>
+        <div class="col-sm-11 ">
+            <div class="row-content-header">{{title}}</div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <button class="btn btn-primary" 
+            (click)="buttonClickedDetail()">detail</button>
+    </div>
+</div>

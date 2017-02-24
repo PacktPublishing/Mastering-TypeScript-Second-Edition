@@ -1,0 +1,57 @@
+.login_sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 450px; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 2;  
+/*
+    top: 0;
+    left: 0;
+*/
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    /*padding-top: 60px;  Place content 60px from the top */
+    color: lightgray;
+    /*transition: 2.5s;   */
+    /*opacity: 0.9;  */
+    /*display: none;*/
+    visibility: hidden;
+}
+
+.login_sidenav_fade {
+  opacity: 0;
+  transition: opacity 1s;
+    
+}
+
+
+.login_sidenav .row {
+    padding: 20px;
+    font-size: 24px;
+}
+
+.sidenav-input {
+    padding: 5px;
+    font-size: 24px;
+    color: midnightblue;
+}
+
+.login_sidenav .closebtn {
+    position: absolute;
+    top: 600;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.login_sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.login_sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}

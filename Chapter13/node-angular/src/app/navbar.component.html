@@ -1,0 +1,11 @@
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container-fluid">
+        <a class="navbar-brand">Home</a>
+        <ul class="nav navbar-nav">
+            
+            <li *ngFor="let item of menuItems; let i = index" >
+                <a href="#">{{item.ButtonName}}</a>
+            </li> 
+        </ul>
+    </div>
+</nav>

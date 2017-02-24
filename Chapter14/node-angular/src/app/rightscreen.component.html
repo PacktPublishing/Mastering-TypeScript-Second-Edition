@@ -1,0 +1,78 @@
+<div id="myRightScreen" class="overlay">
+<button class="btn btn-default" (click)="closeClicked()">
+    <span class="fa fa-chevron-left"></span>
+</button>
+        
+    <div class="overlay-content">
+<!--start overlay-content-->
+
+        <div id="board_detail_inner_panel" 
+         class="row board_detail_inner_panel_row">
+        <div class="col-sm-12">
+            <div class="row board_detail_row">
+                <div class="col-sm-8">
+                    <div class="row">
+                        <div class="col-sm-12  board_detail_header">
+                            {{board.name}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 board_detail_sub_header">
+                            {{board.description}}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <img src="/dist/assets/images/{{board.manufacturer_logo}}" 
+                         class="jpa_logo_class" />
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-5">
+                    <img src="/dist/assets/images/{{board.image}}" 
+                         class="board_detail_image_height center-block" />
+                </div>
+                <div class="col-sm-7">
+                    <div class="row">
+                        <div class="col-sm-12 board_detail_text">
+                            {{board.long_description}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 board_detail_size_header">
+                            Available Sizes:
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 board_detail_table_panel">
+                            <table class="table table-striped">
+                                <thead>
+                                <th>Volume</th>
+                                <th>Width</th>
+                                <th>Length</th>
+                                <th>Sail Min</th>
+                                <th>Sail Max</th>
+                                </thead>
+                                <tbody>
+
+                                <tr *ngFor="let size of board.sizes">
+                                    <td>{{size.volume}}</td>
+                                    <td>{{size.width}}</td>
+                                    <td>{{size.length}}</td>
+                                    <td>{{size.sail_min}}</td>
+                                    <td>{{size.sail_max}}</td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--end overlay-content-->
+    </div>
+</div>

@@ -1,0 +1,8 @@
+{
+  "name": "using_typings",
+  "dependencies": {},
+  "globalDependencies": {
+    "backbone": "registry:dt/backbone#1.0.0+20160316155526",
+    "marionette": "registry:dt/marionette#0.0.0+20160317120654"
+  }
+}

@@ -1,0 +1,30 @@
+<template>
+            
+      <div id="sideNav" class="login_sidenav">
+          <form role="form" submit.delegate="onSubmit()">
+          <div class="container">
+              <a href="#" class="closebtn" >&times;</a>
+              <div class="row">${header}</div>
+              <div class="row">
+                  <input 
+                    class="sidenav-input" 
+                    value.bind="userName" 
+                    type="text" 
+                    placeholder="Username">
+              </div>
+              <div class="row">
+                  <input 
+                    class="sidenav-input" 
+                    value.bind="password" 
+                    type="password" 
+                    placeholder="Password">
+              </div>
+              <div class="row">
+                  <button class="btn btn-primary btn-lg">Login
+                  </button>
+              </div>
+          </div>
+              </form>
+        
+      </div>
+</template>

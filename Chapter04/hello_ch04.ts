@@ -133,7 +133,7 @@ function auditLogDec(target: any,
         originalFunction.apply(this, arguments);
     }
     
-    target[methodName] = auditFunction;
+    descriptor.value = auditFunction;
 }
 
 class ClassWithAuditDec {
